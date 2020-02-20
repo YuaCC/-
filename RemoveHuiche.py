@@ -5,7 +5,7 @@ import re
 import pyperclip
 new_value = ""
 old_value = ""
-reg=re.compile(r"\s+")
+reg=re.compile(r"[\r\n]+")
 while True:
     new_value = pyperclip.paste()
     if new_value != old_value:
